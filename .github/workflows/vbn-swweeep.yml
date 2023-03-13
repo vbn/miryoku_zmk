@@ -2,7 +2,11 @@
 # https://github.com/vbn/miryoku_zmk
 
 name: 'vbn-swweeep-build'
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
 jobs:
   build:
     uses: ./.github/workflows/main.yml
