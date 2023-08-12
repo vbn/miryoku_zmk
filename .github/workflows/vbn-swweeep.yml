@@ -16,3 +16,4 @@ jobs:
       shield: '["swweeep_left nice_view_adapter nice_view","swweeep_right nice_view_adapter nice_view"]'
       kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_SLEEP=y"]'
       branches: '["zmkfirmware/zmk/main urob/zmk/mouse-3.2 vbn/zmk/suspend-test"]'
+      
