@@ -60,8 +60,3 @@
 #define U_NUM    3
 #define U_FUN    4
 #define U_EXTRA  5
-
-// faster cursor movement
-#define U_MOUSE_MOVE_MAX 2000
-// smaller mouse scroll increments.
-#define U_MOUSE_SCROLL_MAX 20
