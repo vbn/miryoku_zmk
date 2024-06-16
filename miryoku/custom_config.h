@@ -35,7 +35,7 @@
 
 #define MIRYOKU_LAYER_EXTRA \
     &bt BT_SEL 0,    &bt BT_SEL 1,    &bt BT_SEL 2,        &bt BT_SEL 3,      &bt BT_CLR,          U_NA,              U_NA,               U_NA,            U_NA,           U_NA,             \
-    &suspend,        U_NA,            U_NA,                U_NA,              U_NA,                U_NA,              U_NA,               U_NA,            U_NA,           &suspend,         \
+    &soft_off,       U_NA,            U_NA,                U_NA,              U_NA,                U_NA,              U_NA,               U_NA,            U_NA,           &soft_off,        \
     &bootloader,     U_NA,            U_NA,                U_NA,              U_NA,                U_NA,              U_NA,               U_NA,            U_NA,           &bootloader,      \
     U_NP,            U_NP,            U_NA,                U_NA,              U_NA,                U_NA,              U_NA,               U_NA,            U_NP,           U_NP
 
