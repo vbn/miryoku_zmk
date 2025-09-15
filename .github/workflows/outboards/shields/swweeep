@@ -5,3 +5,4 @@ outboard_repository=vbn/zmk-fingerpunch-keyboards
 outboard_ref=main
 outboard_from=boards/shields/swweeep
 outboard_to=boards/shields/swweeep
+outboard_modules=englmaxi/zmk-dongle-display/main
