@@ -4,9 +4,9 @@
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
 #define MIRYOKU_LAYER_BASE \
-    &kp Q,           &kp W,           &kp E,               &kp R,             &kp T,                &kp Y,              &kp U,            &kp I,           &kp O,          &kp P,            \
-    U_MT(LGUI, A),   U_MT(LALT, S),   U_MT(LCTRL, D),      U_MT(LSHFT, F),    &kp G,                &kp H,              U_MT(LSHFT, J),   U_MT(LCTRL, K),  U_MT(LALT, L),  U_MT(LGUI, SQT),  \
-    &kp Z,           &kp X,           &kp C,               &kp V,             &kp B,                &kp N,              &kp M,            &kp COMMA,       &kp DOT,        &kp SLASH,        \
+    &kp Q,           &kp W,           &kp E,               &kp R,             &kp T,               &kp Y,             &kp U,              &kp I,           &kp O,          &kp P,            \
+    U_MT(LGUI, A),   U_MT(LALT, S),   U_MT(LCTRL, D),      U_MT(LSHFT, F),    &kp G,               &kp H,             U_MT(LSHFT, J),     U_MT(LCTRL, K),  U_MT(LALT, L),  U_MT(LGUI, SQT),  \
+    &kp Z,           &kp X,           &kp C,               &kp V,             &kp B,               &kp N,             &kp M,              &kp COMMA,       &kp DOT,        &kp SLASH,        \
     U_NP,            U_NP,            U_LT(U_EXTRA, ESC),  U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),  U_LT(U_FUN, RET),  U_LT(U_NUM, BSPC),  &kp DEL,         U_NP,           U_NP
 
 #define MIRYOKU_LAYER_NAV \
