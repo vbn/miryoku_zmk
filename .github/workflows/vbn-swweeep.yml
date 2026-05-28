@@ -12,9 +12,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano_v2"]'
+      board: '["nice_nano//zmk"]'
       shield: '["swweeep_dongle dongle_display","swweeep_left nice_view_adapter nice_view","swweeep_right nice_view_adapter nice_view","settings_reset"]'
-      # Force the main.yml script to clone the stable v0.3 branch instead of main
-      branches: '["zmkfirmware/zmk/v0.3-branch"]'
       # Inject your latency adjustments
       kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_PM_SOFT_OFF=y\nCONFIG_USB_HID_POLL_INTERVAL_MS=1\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=3"]'
