@@ -1,12 +1,14 @@
 // Copyright 2023 vbn
 // https://github.com/vbn/miryoku_zmk
 
+#include "vbn_fast_macro_config.h"
+
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
 #define MIRYOKU_LAYER_BASE \
-    &kp Q,           &kp W,           &kp E,               &kp R,             &kp T,               &kp Y,             &kp U,              &kp I,           &kp O,          &kp P,            \
-    U_MT(LGUI, A),   U_MT(LALT, S),   U_MT(LCTRL, D),      U_MT(LSHFT, F),    &kp G,               &kp H,             U_MT(LSHFT, J),     U_MT(LCTRL, K),  U_MT(LALT, L),  U_MT(LGUI, SQT),  \
-    &kp Z,           &kp X,           &kp C,               &kp V,             &kp B,               &kp N,             &kp M,              &kp COMMA,       &kp DOT,        &kp SLASH,        \
+    &f_q,            &f_w,            &f_e,                &f_r,              &f_t,                &f_y,              &f_u,               &f_i,            &f_o,           &f_p,             \
+    U_MT(LGUI, A),   U_MT(LALT, S),   U_MT(LCTRL, D),      U_MT(LSHFT, F),    &f_g,                &f_h,              U_MT(LSHFT, J),     U_MT(LCTRL, K),  U_MT(LALT, L),  U_MT(LGUI, SQT),  \
+    &f_z,            &f_x,            &f_c,                &f_v,              &f_b,                &f_n,              &f_m,               &f_comma,        &f_dot,         &f_slash,         \
     U_NP,            U_NP,            U_LT(U_EXTRA, ESC),  U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),  U_LT(U_FUN, RET),  U_LT(U_NUM, BSPC),  &kp DEL,         U_NP,           U_NP
 
 #define MIRYOKU_LAYER_NAV \
@@ -22,8 +24,8 @@
     U_NP,            U_NP,            U_NA,                U_NA,              U_NA,                U_BTN1,            U_BTN3,             U_BTN2,          U_NP,           U_NP
 
 #define MIRYOKU_LAYER_NUM \
-    &kp N1,          &kp N2,          &kp N3,              &kp N4,            &kp N5,              U_NA,              &kp GRAVE,          &kp MINUS,       &kp EQUAL,      U_NA,             \
-    U_MT(LGUI, N6),  U_MT(LALT, N7),  U_MT(LCTRL, N8),     U_MT(LSHFT, N9),   &kp N0,              U_NA,              &kp LSHFT,          &kp LCTRL,       &kp LALT,       &kp LGUI,         \
+    &f_n1,           &f_n2,           &f_n3,               &f_n4,             &f_n5,               U_NA,              &f_grave,           &f_minus,        &f_equal,       U_NA,             \
+    U_MT(LGUI, N6),  U_MT(LALT, N7),  U_MT(LCTRL, N8),     U_MT(LSHFT, N9),   &f_n0,               U_NA,              &kp LSHFT,          &kp LCTRL,       &kp LALT,       &kp LGUI,         \
     &kp BSLH,        &kp DOT,         &kp SEMI,            &kp LBKT,          &kp RBKT,            U_NA,              U_NA,               U_NA,            U_NA,           U_NA,             \
     U_NP,            U_NP,            U_NA,                &kp SPC,           &kp ESC,             U_NA,              U_NA,               U_NA,            U_NP,           U_NP
 
