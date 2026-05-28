@@ -30,7 +30,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &fast_tap Q  &fast_tap W  &fast_tap E  &fast_tap R &fast_tap T &fast_tap Y &fast_tap U &fast_tap I &fast_tap O &fast_tap P
+                &vbn_fast_tap Q  &vbn_fast_tap W  &vbn_fast_tap E  &vbn_fast_tap R &vbn_fast_tap T &vbn_fast_tap Y &vbn_fast_tap U &vbn_fast_tap I &vbn_fast_tap O &vbn_fast_tap P
             >;
         };
     };
