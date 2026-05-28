@@ -3,16 +3,6 @@
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
-/ {
-    macros {
-        ZMK_MACRO(fast_alpha_number_keys,
-            wait-ms = <0>;
-            tap-ms = <1>;
-            bindings = <&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P>;
-        )
-    };
-};
-
 #define MIRYOKU_LAYER_BASE \
     &kp Q,           &kp W,           &kp E,               &kp R,             &kp T,                &kp Y,              &kp U,            &kp I,           &kp O,          &kp P,            \
     U_MT(LGUI, A),   U_MT(LALT, S),   U_MT(LCTRL, D),      U_MT(LSHFT, F),    &kp G,                &kp H,              U_MT(LSHFT, J),   U_MT(LCTRL, K),  U_MT(LALT, L),  U_MT(LGUI, SQT),  \
