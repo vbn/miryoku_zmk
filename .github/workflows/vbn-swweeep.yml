@@ -14,5 +14,5 @@ jobs:
     with:
       board: '["nice_nano//zmk"]'
       shield: '["swweeep_dongle dongle_display","swweeep_left nice_view_adapter nice_view","swweeep_right nice_view_adapter nice_view","settings_reset"]'
-      # Inject your latency adjustments
-      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_PM_SOFT_OFF=y\nCONFIG_USB_HID_POLL_INTERVAL_MS=1\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=3"]'
+      # Latency adjustments, remove display for settings_reset.
+      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_PM_SOFT_OFF=y\nCONFIG_USB_HID_POLL_INTERVAL_MS=1\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=3\n#ifdef CONFIG_SHIELD_SETTINGS_RESET\nCONFIG_ZMK_DISPLAY=n\n#endif"]'
