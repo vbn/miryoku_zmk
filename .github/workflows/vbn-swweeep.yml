@@ -18,4 +18,21 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["swweeep_dongle dongle_display","swweeep_left nice_view_adapter nice_view","swweeep_right nice_view_adapter nice_view","settings_reset"]'
       # Latency adjustments, remove display for settings_reset.
-      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_PM_SOFT_OFF=y\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=3\n#ifdef CONFIG_SHIELD_SETTINGS_RESET\nCONFIG_ZMK_DISPLAY=n\n#endif"]'
+      kconfig: |
+        '["CONFIG_ZMK_DISPLAY=y\n
+           CONFIG_ZMK_POINTING=y\n
+           CONFIG_ZMK_SLEEP=n\n
+           CONFIG_ZMK_PM_SOFT_OFF=y\n
+           CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=1\n
+           CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=1\n
+           CONFIG_ZMK_BLE=n\n
+           CONFIG_ZMK_SPLIT_BLE=n\n
+           CONFIG_ZMK_SPLIT_WIRED=n\n
+           CONFIG_ZMK_SPLIT_ESB=y\n
+           CONFIG_ZMK_SPLIT_ESB_PERIPHERAL_COUNT=2\n
+           CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE=2048\n
+           CONFIG_ESB_MAX_PAYLOAD_LENGTH=48\n
+           CONFIG_MPSL_TIMESLOT_SESSION_COUNT=1\n
+           CONFIG_ESB_TX_FIFO_SIZE=1\n
+           #ifdef CONFIG_SHIELD_SETTINGS_RESET\nCONFIG_ZMK_DISPLAY=n\n#endif"]'
+      
