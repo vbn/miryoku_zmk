@@ -289,7 +289,7 @@ jobs:
           done
           if [ -n "$module_dirs" ]
           then
-            modules_arg="-DZMK_EXTRA_MODULES=\"$module_dirs\""
+            modules_arg="-DZMK_EXTRA_MODULES=\"$module_dirs\" -DZEPHYR_EXTRA_MODULES=\"$module_dirs\""
             echo "modules_arg=$modules_arg" >> $GITHUB_OUTPUT
           fi
           echo "::endgroup::"

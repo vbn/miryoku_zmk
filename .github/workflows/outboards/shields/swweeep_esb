@@ -1,4 +1,0 @@
-outboard_repository=badjeff/zmk-feature-split-esb
-outboard_ref=zmk-0.3
-outboard_from=zephyr
-outboard_to=zephyr
